@@ -30,3 +30,24 @@ if you do not embed the "pd.js"-file.
      </tbody>
     </table>
 ```
+
+## Tabbar !(JS component)
+```html
+<div class="pd-tabbar">
+ <div class="pd-tabbar-tab">tab 1</div>
+ <div class="pd-tabbar-tab">tab 2</div>
+ <div class="pd-tabbar-tab">tab 3</div>
+ <div class="pd-tabbar-tab">tab 4</div>
+ <div class="pd-tabbar-tab">tab 5</div>
+</div>
+```
+You can access the Tabbar component via JavaScript.
+```javascript
+let index = 3;
+let firstTabbarOnPage = PaperDesignTabbars[0];
+/*if an index is passed into the method it will be inserted at the position of index
+if not it will be inserted at the end*/
+firstTabbarOnPage.push('new tab', index);
+//delete tab at given index
+firstTabbarOnPage.pop(index);
+```
