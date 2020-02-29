@@ -82,6 +82,10 @@
   text-align: center;
 }
 
+.pd-table tbody td:hover {
+  background-color: #FAFAFA;
+}
+
 .pd-input[type=text] {
   border: solid 1px lightgrey;
   border-radius: 4px;
