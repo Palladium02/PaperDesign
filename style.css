@@ -1,0 +1,321 @@
+* {
+  font-family: 'Source Sans Pro';
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pd-clr-deepBlue {
+  background-color: #500af0;
+}
+
+.pd-clr-deepBlueHover {
+  background-color: #824cfc;
+}
+
+.pd-clr-lightgrey {
+  background-color: #FAFAFA;
+}
+
+.pd-clr-darkGrey {
+  background-color: #424242;
+}
+
+.pd-clr-errorRed {
+  background-color: #c0392b;
+}
+
+.pd-clr-warningYellow {
+  background-color: #FFCC00;
+}
+
+.pd-text-deepBlue {
+  color: #500af0;
+}
+
+.pd-text-lightgrey {
+  color: #FAFAFA;
+}
+
+.pd-text-errorRed {
+  color: #c0392b;
+}
+
+.pd-text-warningYellow {
+  color: #FFCC00;
+}
+
+.pd-card {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.pd-table {
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.pd-table thead {
+  background-color: #E0E0E0;
+}
+
+.pd-table thead th {
+  border: solid 1px lightgrey;
+  padding: 8px;
+}
+
+.pd-table thead tr {
+  border: solid 1px lightgrey;
+  padding: 8px;
+}
+
+.pd-table tbody tr {
+  padding: 8px;
+  border: solid 1px lightgrey;
+  text-align: center;
+}
+
+.pd-table tbody td {
+  padding: 8px;
+  border: solid 1px lightgrey;
+  text-align: center;
+}
+
+.pd-input[type=text] {
+  border: solid 1px lightgrey;
+  border-radius: 4px;
+  padding: 4px;
+  -webkit-transition: border .5s;
+  transition: border .5s;
+}
+
+.pd-input[type=text]:focus {
+  border: solid 1px #500af0;
+}
+
+.pd-button {
+  border: solid 1px #500af0;
+  background-color: #500af0;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 4px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.pd-button:hover {
+  border: solid 1px #824cfc;
+  background-color: #824cfc;
+}
+
+.pd-floating-action {
+  border: solid 1px #500af0;
+  background-color: #500af0;
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 4px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.pd-floating-action:hover {
+  border: solid 1px #824cfc;
+  background-color: #824cfc;
+}
+
+.pd-fixed-action {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  border: solid 1px #500af0;
+  background-color: #500af0;
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 4px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.pd-fixed-action:hover {
+  border: solid 1px #824cfc;
+  background-color: #824cfc;
+}
+
+.pd-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid 1px lightgrey;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.pd-list .pd-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 8px);
+  height: 32px;
+  color: #424242;
+  padding-left: 8px;
+}
+
+.pd-list .pd-list-item:hover {
+  background-color: #FAFAFA;
+}
+
+.pd-list::-webkit-scrollbar {
+  display: none;
+}
+
+.pd-tabbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 8 0 8;
+}
+
+.pd-tabbar .pd-tabbar-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #500af0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background ease-in-out .3s;
+  transition: background ease-in-out .3s;
+  word-wrap: nowrap;
+  min-width: 48px;
+  white-space: nowrap;
+  padding: 0 4 0 4;
+}
+
+.pd-tabbar .pd-tabbar-tab.active {
+  border-bottom: solid 2px #500af0;
+}
+
+.pd-tabbar .pd-tabbar-tab:hover {
+  background-color: rgba(80, 10, 240, 0.2);
+  border-bottom: solid 2px #500af0;
+  cursor: pointer;
+}
+
+.pd-tabbar::-webkit-scrollbar {
+  display: none;
+}
+
+.pd-preloader {
+  background-color: #986cff;
+  height: 4px;
+  width: 100%;
+}
+
+.pd-preloader-indeterminate1 {
+  height: 100%;
+  -webkit-animation-name: preloader1;
+          animation-name: preloader1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-color: #500af0;
+}
+
+.pd-preloader-indeterminate2 {
+  height: 100%;
+  -webkit-animation-name: preloader2;
+          animation-name: preloader2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-color: #500af0;
+}
+
+@-webkit-keyframes preloader1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes preloader1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes preloader2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes preloader2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

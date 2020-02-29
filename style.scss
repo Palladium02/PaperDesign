@@ -1,0 +1,306 @@
+$deepBlue: #500af0;
+$deepBlueHover: #824cfc;
+$preloaderBg: #986cff;
+$lightgrey: #FAFAFA;
+$darkGrey: #424242;
+$errorRed: #c0392b;
+$warningYellow: #FFCC00;
+
+* {
+    font-family: 'Source Sans Pro';
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pd {
+
+    //colors
+    &-clr {
+        &-deepBlue {
+            background-color: $deepBlue;
+        }
+
+        &-deepBlueHover {
+            background-color: $deepBlueHover;
+        }
+
+        &-lightgrey {
+            background-color: $lightgrey;
+        }
+
+        &-darkGrey {
+            background-color: $darkGrey;
+        }
+
+        &-errorRed {
+            background-color: $errorRed;
+        }
+
+        &-warningYellow {
+            background-color: $warningYellow;
+        }
+    }
+
+    &-text {
+        &-deepBlue {
+            color: $deepBlue;
+        }
+
+        &-lightgrey {
+            color: $lightgrey;
+        }
+
+        &-errorRed {
+            color: $errorRed;
+        }
+
+        &-warningYellow {
+            color: $warningYellow;
+        }
+    }
+
+    //components
+
+    //card
+    &-card {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    //table
+    &-table {
+        // margin: 16px;
+        padding: 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        thead {
+            background-color: #E0E0E0;
+
+            th {
+                border: solid 1px lightgrey;
+                padding: 8px;
+            }
+
+            tr {
+                border: solid 1px lightgrey;
+                padding: 8px;
+            }
+        }
+
+        tbody {
+            tr {
+                padding: 8px;
+                border: solid 1px lightgrey;
+                text-align: center;
+            }
+
+            // tr:hover {
+            //     background-color: $lightgrey;
+            // }
+
+            td {
+                padding: 8px;
+                border: solid 1px lightgrey;
+                text-align: center;
+            }
+        }
+
+    }
+
+    //inputs
+    &-input[type=text] {
+        border: solid 1px lightgrey;
+        border-radius: 4px;
+        // margin: 4px;
+        padding: 4px;
+        transition: border .5s;
+    }
+
+    &-input[type=text]:focus {
+        border: solid 1px $deepBlue;
+    }
+
+    //buttons
+    &-button {
+        border: solid 1px $deepBlue;
+        background-color: $deepBlue;
+        color: #FFF;
+        border-radius: 4px;
+        // margin: 4px;
+        padding: 4px;
+        transition: all ease-in-out .3s;
+    }
+
+    &-button:hover {
+        border: solid 1px $deepBlueHover;
+        background-color: $deepBlueHover;
+    }
+
+    &-floating-action {
+        border: solid 1px $deepBlue;
+        background-color: $deepBlue;
+        text-align: center;
+        color: #FFF;
+        border-radius: 50%;
+        // margin: 4px;
+        padding: 4px;
+        transition: all ease-in-out .3s;
+    }
+
+    &-floating-action:hover {
+        border: solid 1px $deepBlueHover;
+        background-color: $deepBlueHover;
+    }
+
+    &-fixed-action {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        border: solid 1px $deepBlue;
+        background-color: $deepBlue;
+        text-align: center;
+        color: #FFF;
+        border-radius: 50%;
+        // margin: 4px;
+        padding: 4px;
+        transition: all ease-in-out .3s;
+    }
+
+    &-fixed-action:hover {
+        border: solid 1px $deepBlueHover;
+        background-color: $deepBlueHover;
+    }
+
+
+    //lists
+    &-list {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px lightgrey;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        // margin: 16px;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars-none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        .pd-list-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: calc(100% - 8px);
+            height: 32px;
+            color: $darkGrey;
+            padding-left: 8px;
+        }
+
+        .pd-list-item:hover {
+            background-color: $lightgrey;
+        }
+    }
+
+    &-list::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    //tabs
+    &-tabbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overflow: -moz-scrollbars-none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0 8 0 8;
+
+        .pd-tabbar-tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: $deepBlue;
+            width: 100%;
+            height: 100%;
+            transition: background ease-in-out .3s;
+            word-wrap: nowrap;
+            min-width: 48px;
+            white-space: nowrap;
+            padding: 0 4 0 4;
+            // text-align: center;
+            // margin-left: 16px;
+            // margin-right: 16px;
+        }
+
+        .pd-tabbar-tab.active {
+            border-bottom: solid 2px $deepBlue;
+        }
+
+        .pd-tabbar-tab:hover {
+            background-color: rgba(80, 10, 240, 0.2);
+            border-bottom: solid 2px $deepBlue;
+            cursor: pointer;
+        }
+    }
+    &-tabbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    &-preloader {
+        background-color: $preloaderBg;
+        height: 4px;
+        width: 100%;
+
+        &-indeterminate1 {
+            height: 100%;
+            //width: 20%;
+            animation-name: preloader1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: $deepBlue;
+        }
+
+        &-indeterminate2 {
+            height: 100%;
+            //width: 20%;
+            animation-name: preloader2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: $deepBlue;
+        }
+    }
+
+}
+
+@keyframes preloader1 {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes preloader2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
