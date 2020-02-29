@@ -52,3 +52,36 @@ firstTabbarOnPage.push('new tab', index);
 //delete tab at given index
 firstTabbarOnPage.pop(index);
 ```
+
+## Sidemenu (JS component)
+```html
+<div class="pd-sidemenu">
+ <div class="pd-menu-header">
+  <h2>Header 1</h2>
+ </div>
+ <div class="pd-menu-item">
+  <i class="material-icons">cloud</i><p>Item 1</p>
+ </div>
+ <div class="pd-menu-item">
+  <p>Item 2</p>
+ </div>
+ <div class="pd-menu-item">
+  <p>Item 3</p>
+ </div>
+ <div class="pd-menu-item">
+  <p>Item 4</p>
+ </div>
+</div>
+```
+You can access the Sidemenu component via JavaScript. Note you cannot have more than one more sidemenu per side.
+
+```javascript
+//opens menu
+PaperDesignSidemenu.open();
+
+//closes menu
+PaperDesignSidemenu.close();
+
+//toggles menu way better than calling two methods, right?
+PaperDesignSidemenu.toggle();
+```

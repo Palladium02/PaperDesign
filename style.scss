@@ -2,6 +2,7 @@ $deepBlue: #500af0;
 $deepBlueHover: #824cfc;
 $preloaderBg: #986cff;
 $lightgrey: #FAFAFA;
+$mediumgrey: #989898;
 $darkGrey: #424242;
 $errorRed: #c0392b;
 $warningYellow: #FFCC00;
@@ -111,6 +112,63 @@ $warningYellow: #FFCC00;
             }
         }
 
+    }
+
+    //menus
+
+    &-sidemenu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-300px);
+        width: 300px;
+        background-color: #FFF;
+        height: 100%;
+        z-index: 9999;
+        transition: transform ease-in-out 1s;
+        overflow: -moz-scrollbars-none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        //overflow-y: scroll;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
+        .pd-menu-item {
+            width: calc(100% - 32px);
+            height: 32px;
+            padding-left: 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .pd-menu-item:hover {
+            cursor: pointer;
+            background-color: $lightgrey;
+        }
+
+        .pd-menu-header {
+            color: $mediumgrey;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 32px;
+            width: calc(100% - 32px);
+            height: 48px;
+            border-bottom: solid 1px lightgrey;
+        }
+    }
+
+    &-sidemenu::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &-sidemenu.active {
+        transform: translateX(0);
     }
 
     //inputs

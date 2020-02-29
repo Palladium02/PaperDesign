@@ -62,7 +62,39 @@
 
     }
 
+    class PaperDesignSidemenu {
+        constructor() {
+            this.sidemenu = document.querySelectorAll('.pd-sidemenu')[0];
+            this.menuItems = Array.from(this.sidemenu);
+            if(this.sidemenu.length >= 2) {
+                console.error(`You cannot have more than one sidemenu on your page! Currently you have ${this.sidemenu.length} sidemenus.`);
+                return new Error();
+            }
+        }
+
+        open() {
+            if(this.sidemenu.classList.contains('active')) {
+                console.warn('The sidemenu is already open.');
+            } else {
+                this.sidemenu.classList.add('active');
+            }
+        }
+
+        close() {
+            if(this.sidemenu.classList.contains('active')) {
+                this.sidemenu.classList.remove('active');
+            } else {
+                console.warn('The sidemenu is already closed.');
+            }
+        }
+
+        toggle() {
+            this.sidemenu.classList.toggle('active');
+        }
+    }
+
     //auto init of tabbar components
+    window.PaperDesignSidemenu = new PaperDesignSidemenu();
     window.PaperDesignTabbars = [];
     let tabbars = document.querySelectorAll('.pd-tabbar');
     tabbars.forEach(tabbar => {
