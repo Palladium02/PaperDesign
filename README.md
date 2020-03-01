@@ -46,7 +46,7 @@ You can access the Tabbar component via JavaScript.
 ```javascript
 let index = 3;
 let firstTabbarOnPage = PaperDesignTabbars[0];
-/*if an index is passed into the method it will be inserted at the position of index
+/*if an index is passed into the method the new tab will be inserted at the position of index
 if not it will be inserted at the end*/
 firstTabbarOnPage.push('new tab', index);
 //delete tab at given index
@@ -60,7 +60,7 @@ firstTabbarOnPage.pop(index);
   <h2>Header 1</h2>
  </div>
  <div class="pd-menu-item">
-  <i class="material-icons">cloud</i><p>Item 1</p>
+  <p>Item 1</p>
  </div>
  <div class="pd-menu-item">
   <p>Item 2</p>
@@ -90,3 +90,9 @@ PaperDesignSidemenu.toggle();
 
 ### no-scrollbar
 Add this class to the classList of an element to hide the scrollbar of it and maintain the scroll-function.
+
+### hide-on-mobile
+Add this class to the classList of an element to hide it on mobile screens (max-width: 576px).
+
+### hide-on-desktop
+Add this class to the classList of an element to hide it on screens above 992px width.

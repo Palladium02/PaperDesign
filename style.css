@@ -366,6 +366,18 @@
   display: none;
 }
 
+@media only screen and (max-width: 576px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
 @-webkit-keyframes preloader1 {
   0% {
     width: 0%;

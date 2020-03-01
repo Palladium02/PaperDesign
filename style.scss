@@ -354,6 +354,21 @@ $warningYellow: #FFCC00;
     display: none;
 }
 
+//hide on mobile
+@media only screen and (max-width: 576px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+//hide on desktop
+@media only screen and (min-width: 992px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+
 @keyframes preloader1 {
     0% {
         width: 0%;
