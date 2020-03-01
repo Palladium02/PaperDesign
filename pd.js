@@ -1,4 +1,5 @@
 (function(window) {
+    'use strict';
 
     class PaperDesignTabbar {
         constructor(tabbar) {
