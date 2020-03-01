@@ -32,7 +32,7 @@ All JavaScript-Components will initialize themselves automatically.
     </table>
 ```
 
-## Tabbar (JS component)
+### Tabbar (JS component)
 ```html
 <div class="pd-tabbar">
  <div class="pd-tabbar-tab">tab 1</div>
@@ -53,7 +53,7 @@ firstTabbarOnPage.push('new tab', index);
 firstTabbarOnPage.pop(index);
 ```
 
-## Sidemenu (JS component)
+### Sidemenu (JS component)
 ```html
 <div class="pd-sidemenu">
  <div class="pd-menu-header">
@@ -85,3 +85,8 @@ PaperDesignSidemenu.close();
 //toggles menu way better than calling two methods, right?
 PaperDesignSidemenu.toggle();
 ```
+
+## Helper Classes
+
+### no-scrollbar
+Add this class to the classList of an element to hide the scrollbar of it and maintain the scroll-function.
