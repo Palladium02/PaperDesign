@@ -66,7 +66,7 @@
     class PaperDesignSidemenu {
         constructor() {
             this.sidemenu = document.querySelectorAll('.pd-sidemenu')[0];
-            this.menuItems = Array.from(this.sidemenu);
+            this.menuItems = Array.from(this.sidemenu.children);
             if(this.sidemenu.length >= 2) {
                 console.error(`You cannot have more than one sidemenu on your page! Currently you have ${this.sidemenu.length} sidemenus.`);
                 return new Error();

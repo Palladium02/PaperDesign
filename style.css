@@ -6,11 +6,11 @@
 }
 
 .pd-clr-deepBlue {
-  background-color: #500af0;
+  background-color: #3c0af0;
 }
 
 .pd-clr-deepBlueHover {
-  background-color: #824cfc;
+  background-color: #4f4cfc;
 }
 
 .pd-clr-lightgrey {
@@ -30,7 +30,7 @@
 }
 
 .pd-text-deepBlue {
-  color: #500af0;
+  color: #3c0af0;
 }
 
 .pd-text-lightgrey {
@@ -176,12 +176,12 @@
 }
 
 .pd-input[type=text]:focus {
-  border: solid 1px #500af0;
+  border: solid 1px #3c0af0;
 }
 
 .pd-button {
-  border: solid 1px #500af0;
-  background-color: #500af0;
+  border: solid 1px #3c0af0;
+  background-color: #3c0af0;
   color: #FFF;
   border-radius: 4px;
   padding: 4px;
@@ -190,13 +190,13 @@
 }
 
 .pd-button:hover {
-  border: solid 1px #824cfc;
-  background-color: #824cfc;
+  border: solid 1px #4f4cfc;
+  background-color: #4f4cfc;
 }
 
 .pd-floating-action {
-  border: solid 1px #500af0;
-  background-color: #500af0;
+  border: solid 1px #3c0af0;
+  background-color: #3c0af0;
   text-align: center;
   color: #FFF;
   border-radius: 50%;
@@ -206,16 +206,16 @@
 }
 
 .pd-floating-action:hover {
-  border: solid 1px #824cfc;
-  background-color: #824cfc;
+  border: solid 1px #4f4cfc;
+  background-color: #4f4cfc;
 }
 
 .pd-fixed-action {
   position: fixed;
   right: 16px;
   bottom: 16px;
-  border: solid 1px #500af0;
-  background-color: #500af0;
+  border: solid 1px #3c0af0;
+  background-color: #3c0af0;
   text-align: center;
   color: #FFF;
   border-radius: 50%;
@@ -225,8 +225,8 @@
 }
 
 .pd-fixed-action:hover {
-  border: solid 1px #824cfc;
-  background-color: #824cfc;
+  border: solid 1px #4f4cfc;
+  background-color: #4f4cfc;
 }
 
 .pd-list {
@@ -302,7 +302,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  color: #500af0;
+  color: #3c0af0;
   width: 100%;
   height: 100%;
   -webkit-transition: background ease-in-out .3s;
@@ -314,12 +314,12 @@
 }
 
 .pd-tabbar .pd-tabbar-tab.active {
-  border-bottom: solid 2px #500af0;
+  border-bottom: solid 2px #3c0af0;
 }
 
 .pd-tabbar .pd-tabbar-tab:hover {
   background-color: rgba(80, 10, 240, 0.2);
-  border-bottom: solid 2px #500af0;
+  border-bottom: solid 2px #3c0af0;
   cursor: pointer;
 }
 
@@ -328,7 +328,7 @@
 }
 
 .pd-preloader {
-  background-color: #986cff;
+  background-color: #766cff;
   height: 4px;
   width: 100%;
 }
@@ -341,7 +341,7 @@
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  background-color: #500af0;
+  background-color: #3c0af0;
 }
 
 .pd-preloader-indeterminate2 {
@@ -352,7 +352,7 @@
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  background-color: #500af0;
+  background-color: #3c0af0;
 }
 
 .no-scrollbar {
