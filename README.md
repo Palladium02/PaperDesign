@@ -53,6 +53,30 @@ firstTabbarOnPage.push('new tab', index);
 firstTabbarOnPage.pop(index);
 ```
 
+### Tabslider (JS component)
+```html
+<div class="pd-tabslider">
+ <div class="pd-tabslider-bar">
+  <div class="pd-tabslider-bar-tab active">
+   Tab1
+  </div>
+ <div class="pd-tabslider-bar-tab">
+  Tab2
+ </div>
+</div>
+<div class="pd-tabslider-container">
+ <div class="pd-tabslider-container-item">
+  Slide1
+ </div>
+ <div class="pd-tabslider-container-item">
+  Slide2
+ </div>
+ </div>
+</div>
+```
+This component is similar to the Tabbar component. With the Tabslider component you can control the slides in the slider-container.
+
+
 ### Sidemenu (JS component)
 ```html
 <div class="pd-sidemenu">
