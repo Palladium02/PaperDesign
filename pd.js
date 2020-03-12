@@ -63,6 +63,42 @@
 
     }
 
+    class PaperDesignTabslider {
+        constructor(tabbarSlider) {
+            this.element = tabbarSlider;
+            this.children = Array.from(this.element.querySelector('.pd-tabslider-bar').children);
+            this.slides = Array.from(this.element.querySelector('.pd-tabslider-container').querySelectorAll('.pd-tabslider-container-item'));
+            this.activeTab = null;
+            if(this.children.length != this.slides.length) {
+                return new Error();
+            }
+            //this.tabTemplate = `<div class="pd-tabbar-tab"></div>`;
+            Array.from(this.children).forEach(child => {
+                if(child.classList.contains('active')) {
+                    this.activeTab = child;
+                    this.slides[this.children.indexOf(child)].classList.add('active');
+                }
+                child.addEventListener('click', (event) => {
+                    if(event.target.classList.contains('active')) {
+                    } else {
+                        this.activeTab.classList.remove('active');
+                        let index = this.children.indexOf(this.activeTab);
+                        this.slides[this.children.indexOf(this.activeTab)].classList.remove('active');
+                        this.activeTab = event.target;
+                        event.target.classList.add('active');
+                        this.slides[this.children.indexOf(this.activeTab)].classList.add('active');
+                        if(this.children.indexOf(this.activeTab) > index) {
+                            this.slides[this.children.indexOf(this.activeTab)].classList.add('left');
+                        } else {
+                            this.slides[this.children.indexOf(this.activeTab)].classList.add('right');
+                        }
+                        
+                    }
+                });
+            });
+        }
+    }
+
     class PaperDesignSidemenu {
         constructor() {
             this.sidemenu = document.querySelectorAll('.pd-sidemenu')[0];
@@ -97,9 +133,15 @@
     //auto init of tabbar components
     window.PaperDesignSidemenu = new PaperDesignSidemenu();
     window.PaperDesignTabbars = [];
+    window.PaperDesignTabslider = [];
     let tabbars = document.querySelectorAll('.pd-tabbar');
     tabbars.forEach(tabbar => {
         window.PaperDesignTabbars.push(new PaperDesignTabbar(tabbar));
+    });
+    let tabSlider = document.querySelectorAll('.pd-tabslider');
+    tabSlider.forEach(tabSlider => {
+        console.log(tabSlider);
+        window.PaperDesignTabslider.push(new PaperDesignTabslider(tabSlider));
     });
 
     
