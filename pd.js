@@ -130,10 +130,27 @@
         }
     }
 
+    class PaperDesignLightbox {
+        constructor(element) {
+            this.lightbox = element;
+            this.bigLightbox = element.querySelector('.image');
+            this.lightbox.addEventListener('click', (event) => {
+                if(this.bigLightbox.classList.contains('active')) {
+                    this.bigLightbox.classList.remove('active');
+                    this.bigLightbox.classList.add('deactivated');
+                } else {
+                    this.bigLightbox.classList.remove('deactivated');
+                    this.bigLightbox.classList.add('active');
+                }
+            });
+        }
+    }
+
     //auto init of tabbar components
     window.PaperDesignSidemenu = new PaperDesignSidemenu();
     window.PaperDesignTabbars = [];
     window.PaperDesignTabslider = [];
+    window.PaperDesignLightbox = [];
     let tabbars = document.querySelectorAll('.pd-tabbar');
     tabbars.forEach(tabbar => {
         window.PaperDesignTabbars.push(new PaperDesignTabbar(tabbar));
@@ -142,6 +159,10 @@
     tabSlider.forEach(tabSlider => {
         console.log(tabSlider);
         window.PaperDesignTabslider.push(new PaperDesignTabslider(tabSlider));
+    });
+    let lightBoxes = document.querySelectorAll('.pd-lightbox');
+    lightBoxes.forEach(lightbox => {
+        window.PaperDesignLightbox.push(new PaperDesignLightbox(lightbox))
     });
 
     

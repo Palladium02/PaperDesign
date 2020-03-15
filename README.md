@@ -110,6 +110,17 @@ PaperDesignSidemenu.close();
 PaperDesignSidemenu.toggle();
 ```
 
+### Lightbox (JS component)
+```html
+<div class="pd-lightbox">
+ <div class="image">
+  <img src="./images/river.jpg" alt="example image">
+ </div>
+</div>
+```
+With the PaperDesignLightbox you can you can enlarge images and put them onto a dark grey background to get the best out of your images.
+By clicking on the image the lightbox opens click again and it will close.
+
 ## Helper Classes
 
 ### no-scrollbar
