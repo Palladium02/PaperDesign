@@ -9,7 +9,7 @@ All JavaScript-Components will initialize themselves automatically.
 
 ### Table
 ```html
-    <table class="pd-table">
+    <table class="pd table">
      <thead>
       <tr>
        <th>#</th>

@@ -27,44 +27,44 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
-.pd-card {
+.pd.card {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.pd-table {
+.pd.table {
   padding: 0;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-.pd-table thead {
+.pd.table thead {
   background-color: #E0E0E0;
 }
 
-.pd-table thead th {
+.pd.table thead th {
   border: solid 1px lightgrey;
   padding: 8px;
 }
 
-.pd-table thead tr {
+.pd.table thead tr {
   border: solid 1px lightgrey;
   padding: 8px;
 }
 
-.pd-table tbody tr {
-  padding: 8px;
-  border: solid 1px lightgrey;
-  text-align: center;
-}
-
-.pd-table tbody td {
+.pd.table tbody tr {
   padding: 8px;
   border: solid 1px lightgrey;
   text-align: center;
 }
 
-.pd-table tbody td:hover {
+.pd.table tbody td {
+  padding: 8px;
+  border: solid 1px lightgrey;
+  text-align: center;
+}
+
+.pd.table tbody td:hover {
   background-color: #FAFAFA;
 }
 

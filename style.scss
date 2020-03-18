@@ -42,13 +42,13 @@ input[type=range]::-ms-track {
     //components
 
     //card
-    &-card {
+    &.card {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
             0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
     //table
-    &-table {
+    &.table {
         // margin: 16px;
         padding: 0;
         border-spacing: 0;
