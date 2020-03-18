@@ -112,7 +112,7 @@ PaperDesignSidemenu.toggle();
 
 ### Lightbox (JS component)
 ```html
-<div class="pd-lightbox">
+<div class="pd lightbox">
  <div class="image">
   <img src="./images/river.jpg" alt="example image">
  </div>
