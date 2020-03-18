@@ -25,7 +25,7 @@
 
         push(tabText, index) {
             let tab = document.createElement('div');
-            tab.classList.add('pd-tabbar-tab');
+            tab.classList.add('tab');
             let text = document.createTextNode(tabText);
             tab.appendChild(text);
             if(index) {
@@ -66,8 +66,8 @@
     class PaperDesignTabslider {
         constructor(tabbarSlider) {
             this.element = tabbarSlider;
-            this.children = Array.from(this.element.querySelector('.pd-tabslider-bar').children);
-            this.slides = Array.from(this.element.querySelector('.pd-tabslider-container').querySelectorAll('.pd-tabslider-container-item'));
+            this.children = Array.from(this.element.querySelector('.bar').children);
+            this.slides = Array.from(this.element.querySelector('.container').querySelectorAll('.item'));
             this.activeTab = null;
             if(this.children.length != this.slides.length) {
                 return new Error();
@@ -101,7 +101,7 @@
 
     class PaperDesignSidemenu {
         constructor() {
-            this.sidemenu = document.querySelectorAll('.pd-sidemenu')[0];
+            this.sidemenu = document.querySelectorAll('.pd.sidemenu')[0];
             this.menuItems = Array.from(this.sidemenu.children);
             if(this.sidemenu.length >= 2) {
                 console.error(`You cannot have more than one sidemenu on your page! Currently you have ${this.sidemenu.length} sidemenus.`);
@@ -151,16 +151,16 @@
     window.PaperDesignTabbars = [];
     window.PaperDesignTabslider = [];
     window.PaperDesignLightbox = [];
-    let tabbars = document.querySelectorAll('.pd-tabbar');
+    let tabbars = document.querySelectorAll('.pd.tabbar');
     tabbars.forEach(tabbar => {
         window.PaperDesignTabbars.push(new PaperDesignTabbar(tabbar));
     });
-    let tabSlider = document.querySelectorAll('.pd-tabslider');
+    let tabSlider = document.querySelectorAll('.pd.tabslider');
     tabSlider.forEach(tabSlider => {
         console.log(tabSlider);
         window.PaperDesignTabslider.push(new PaperDesignTabslider(tabSlider));
     });
-    let lightBoxes = document.querySelectorAll('.pd-lightbox');
+    let lightBoxes = document.querySelectorAll('.pd.lightbox');
     lightBoxes.forEach(lightbox => {
         window.PaperDesignLightbox.push(new PaperDesignLightbox(lightbox))
     });

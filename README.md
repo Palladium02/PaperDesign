@@ -34,12 +34,12 @@ All JavaScript-Components will initialize themselves automatically.
 
 ### Tabbar (JS component)
 ```html
-<div class="pd-tabbar">
- <div class="pd-tabbar-tab">tab 1</div>
- <div class="pd-tabbar-tab">tab 2</div>
- <div class="pd-tabbar-tab">tab 3</div>
- <div class="pd-tabbar-tab">tab 4</div>
- <div class="pd-tabbar-tab">tab 5</div>
+<div class="pd tabbar">
+ <div class="tab">tab 1</div>
+ <div class="tab">tab 2</div>
+ <div class="tab">tab 3</div>
+ <div class="tab">tab 4</div>
+ <div class="tab">tab 5</div>
 </div>
 ```
 You can access the Tabbar component via JavaScript.
@@ -55,20 +55,20 @@ firstTabbarOnPage.pop(index);
 
 ### Tabslider (JS component)
 ```html
-<div class="pd-tabslider">
- <div class="pd-tabslider-bar">
-  <div class="pd-tabslider-bar-tab active">
+<div class="pd tabslider">
+ <div class="bar">
+  <div class="tab active">
    Tab1
   </div>
- <div class="pd-tabslider-bar-tab">
+ <div class="tab">
   Tab2
  </div>
 </div>
-<div class="pd-tabslider-container">
- <div class="pd-tabslider-container-item">
+<div class="container">
+ <div class="item">
   Slide1
  </div>
- <div class="pd-tabslider-container-item">
+ <div class="item">
   Slide2
  </div>
  </div>

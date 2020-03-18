@@ -39,51 +39,6 @@ input[type=range]::-ms-track {
 
 .pd {
 
-    //colors
-    &-clr {
-        &-deepBlue {
-            background-color: $deepBlue;
-        }
-
-        &-deepBlueHover {
-            background-color: $deepBlueHover;
-        }
-
-        &-lightgrey {
-            background-color: $lightgrey;
-        }
-
-        &-darkGrey {
-            background-color: $darkGrey;
-        }
-
-        &-errorRed {
-            background-color: $errorRed;
-        }
-
-        &-warningYellow {
-            background-color: $warningYellow;
-        }
-    }
-
-    &-text {
-        &-deepBlue {
-            color: $deepBlue;
-        }
-
-        &-lightgrey {
-            color: $lightgrey;
-        }
-
-        &-errorRed {
-            color: $errorRed;
-        }
-
-        &-warningYellow {
-            color: $warningYellow;
-        }
-    }
-
     //components
 
     //card
@@ -139,7 +94,7 @@ input[type=range]::-ms-track {
 
     //menus
 
-    &-sidemenu {
+    &.sidemenu {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -159,7 +114,7 @@ input[type=range]::-ms-track {
         //overflow-y: scroll;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
             0 3px 6px rgba(0, 0, 0, 0.23);
-        .pd-menu-item {
+        >.item {
             width: calc(100% - 32px);
             height: 32px;
             padding-left: 32px;
@@ -168,12 +123,12 @@ input[type=range]::-ms-track {
             justify-content: flex-start;
             align-items: center;
         }
-        .pd-menu-item:hover {
+        >.item:hover {
             cursor: pointer;
             background-color: $lightgrey;
         }
 
-        .pd-menu-header {
+        >.header {
             color: $mediumgrey;
             display: flex;
             flex-direction: row;
@@ -190,12 +145,12 @@ input[type=range]::-ms-track {
     //     width: 0;
     // }
 
-    &-sidemenu.active {
+    &.sidemenu.active {
         transform: translateX(0);
     }
 
     //inputs
-    &-input[type=text] {
+    &.input[type=text] {
         border: solid 1px lightgrey;
         border-radius: 4px;
         // margin: 4px;
@@ -203,29 +158,29 @@ input[type=range]::-ms-track {
         transition: border .5s;
     }
 
-    &-input[type=text]:focus {
+    &.input[type=text]:focus {
         border: solid 1px $deepBlue;
     }
 
     //range
-    &-range[type=range] {
+    &.range[type=range] {
         -webkit-appearance: none;
         margin: 18px 0;
         width: 100%;
     }
 
-    &-range[type=range]:focus {
+    &.range[type=range]:focus {
         outline: none;
     }
 
-    &-range[type=range]::-webkit-slider-runnable-track {
+    &.range[type=range]::-webkit-slider-runnable-track {
         width: 100%;
         height: 3px;
         cursor: pointer;
         background: lightgrey;
     }
 
-    &-range[type=range]::-webkit-slider-thumb {
+    &.range[type=range]::-webkit-slider-thumb {
         border: 1px solid lightgrey;
         height: 16px;
         width: 16px;
@@ -236,20 +191,20 @@ input[type=range]::-ms-track {
         margin-top: -6px
     }
 
-    &-range[type=range]:focus::-webkit-slider-thumb,
-    &-range[type=range]:focus::-moz-range-thumb,
-    &-range[type=range]:focus::-ms-thumb {
+    &.range[type=range]:focus::-webkit-slider-thumb,
+    &.range[type=range]:focus::-moz-range-thumb,
+    &.range[type=range]:focus::-ms-thumb {
         background: $deepBlue;
     }
 
-    &-range[type=range]::-moz-range-track {
+    &.range[type=range]::-moz-range-track {
         width: 100%;
         height: 3px;
         cursor: pointer;
         background-color: lightgrey;
     }
 
-    &-range[type=range]::-moz-range-thumb {
+    &.range[type=range]::-moz-range-thumb {
         border: 1px solid lightgrey;
         height: 16px;
         width: 16px;
@@ -259,7 +214,7 @@ input[type=range]::-ms-track {
         margin-top: -6px;
     }
 
-    &-range[type=range]::-ms-track {
+    &.range[type=range]::-ms-track {
         width: 100%;
         height: 3px;
         cursor: pointer;
@@ -269,16 +224,16 @@ input[type=range]::-ms-track {
         color: transparent;
     }
 
-    &-range[type=range]::-ms-fill-lower {
+    &.range[type=range]::-ms-fill-lower {
         background: lightgrey;
         border-radius: 2.6px;
     }
 
-    &-range[type=range]::-ms-fill-upper {
+    &.range[type=range]::-ms-fill-upper {
         background: lightgrey;
     }
 
-    &-range[type=range]::-ms-thumb {
+    &.range[type=range]::-ms-thumb {
         border: 1px solid lightgrey;
         height: 16px;
         width: 16px;
@@ -289,7 +244,7 @@ input[type=range]::-ms-track {
     }
 
     //buttons
-    &-button {
+    &.button {
         border: solid 1px $deepBlue;
         background-color: $deepBlue;
         color: #FFF;
@@ -308,13 +263,13 @@ input[type=range]::-ms-track {
         }
     }
 
-    &-button:hover {
+    &.button:hover {
         border: solid 1px $deepBlueHover;
         background-color: $deepBlueHover;
         cursor: pointer;
     }
 
-    &-floating-action {
+    &.floating-action {
         border: solid 1px $deepBlue;
         background-color: $deepBlue;
         text-align: center;
@@ -335,12 +290,12 @@ input[type=range]::-ms-track {
         }
     }
 
-    &-floating-action:hover {
+    &.floating-action:hover {
         border: solid 1px $deepBlueHover;
         background-color: $deepBlueHover;
     }
 
-    &-fixed-action {
+    &.fixed-action {
         position: fixed;
         right: 16px;
         bottom: 16px;
@@ -363,13 +318,13 @@ input[type=range]::-ms-track {
         }
     }
 
-    &-fixed-action:hover {
+    &.fixed-action:hover {
         border: solid 1px $deepBlueHover;
         background-color: $deepBlueHover;
     }
 
     //lists
-    &-list {
+    &.list {
         display: flex;
         flex-direction: column;
         border: solid 1px lightgrey;
@@ -381,7 +336,7 @@ input[type=range]::-ms-track {
         // scrollbar-width: none;
         // -ms-overflow-style: none;
 
-        .pd-list-item {
+        >.item {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -392,7 +347,7 @@ input[type=range]::-ms-track {
             padding-left: 8px;
         }
 
-        .pd-list-item:hover {
+        >.item:hover {
             background-color: $lightgrey;
         }
     }
@@ -403,7 +358,7 @@ input[type=range]::-ms-track {
 
 
     //tabs
-    &-tabbar {
+    &.tabbar {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -417,7 +372,7 @@ input[type=range]::-ms-track {
         -ms-overflow-style: none;
         padding: 0 8 0 8;
 
-        .pd-tabbar-tab {
+        >.tab {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -435,23 +390,23 @@ input[type=range]::-ms-track {
             // margin-right: 16px;
         }
 
-        .pd-tabbar-tab.active {
+        >.tab.active {
             // border-bottom: solid 2px $deepBlue;
             box-shadow: inset 0 -2px $deepBlue;
         }
 
-        .pd-tabbar-tab:hover {
+        >.tab:hover {
             background-color: rgba(80, 10, 240, 0.2);
             // border-bottom: solid 2px $deepBlue;
             cursor: pointer;
             box-shadow: inset 0 -2px $deepBlue;
         }
     }
-    &-tabbar::-webkit-scrollbar {
+    >.tabbar::-webkit-scrollbar {
         display: none;
     }
 
-    &-tabslider {
+    &.tabslider {
         height: 100%;
         width: 100%;
         display: grid;
@@ -459,7 +414,7 @@ input[type=range]::-ms-track {
         // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
         //             0 1px 2px rgba(0, 0, 0, 0.24);
         border: solid 1px lightgrey;
-        &-bar {
+        >.bar {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -472,7 +427,7 @@ input[type=range]::-ms-track {
             scrollbar-width: none;
             -ms-overflow-style: none;
             padding: 0 8 0 8;
-            &-tab {
+            >.tab {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -486,23 +441,24 @@ input[type=range]::-ms-track {
                 white-space: nowrap;
                 padding: 0 4 0 4;
             }
-            &-tab:hover {
+            >.tab:hover {
                 background-color: rgba(80, 10, 240, 0.2);
                 // border-bottom: solid 2px $deepBlue;
                 cursor: pointer;
                 box-shadow: inset 0 -2px $deepBlue;
             }
-            &-tab.active {
+            >.tab.active {
                 box-shadow: inset 0 -2px $deepBlue;
             }
         }
-        &-container {
+        >.container {
             display: flex;
             justify-content: center;
+            width: 100%;
             align-items: center;
             flex-direction: row;
             border-top: solid 1px $lightgrey;
-            &-item {
+            >.item {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -510,16 +466,16 @@ input[type=range]::-ms-track {
                 width: 100%;
                 display: none;
             }
-            &-item.active {
+            >.item.active {
                 display: flex;
                 
             }
-            &-item.active.left {
+            >.item.active.left {
                 animation-name: tabsliderfromleft;
                 animation-duration: 1s;
                 animation-iteration-count: 1;
             }
-            &-item.active.right {
+            >.item.active.right {
                 animation-name: tabsliderfromright;
                 animation-duration: 1s;
                 animation-iteration-count: 1;
@@ -527,12 +483,12 @@ input[type=range]::-ms-track {
         }
     }
 
-    &-lightbox {
+    &.lightbox {
         height: 100%;
         width: 100%;
         background-color: $lightgrey;
         will-change: top, left, right, bottom;
-        .image {
+        >.image {
             height: 100%;
             width: 100%;
             display: flex;
@@ -546,7 +502,7 @@ input[type=range]::-ms-track {
                 cursor: zoom-in;
             }
         }
-        .image.active {
+        >.image.active {
             animation-name: showLightbox;
             animation-duration: .5s;
             animation-iteration-count: 1;
@@ -575,12 +531,12 @@ input[type=range]::-ms-track {
         }
     }
 
-    &-preloader {
+    &.preloader {
         background-color: $preloaderBg;
         height: 4px;
         width: 100%;
 
-        &-indeterminate1 {
+        >.indeterminate1 {
             height: 100%;
             animation-name: preloader1;
             animation-duration: 2s;
@@ -588,7 +544,7 @@ input[type=range]::-ms-track {
             background-color: $deepBlue;
         }
 
-        &-indeterminate2 {
+        >.indeterminate2 {
             height: 100%;
             animation-name: preloader2;
             animation-duration: 2s;
@@ -609,6 +565,44 @@ input[type=range]::-ms-track {
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;
+}
+
+//colors
+.deepBlue {
+    background-color: $deepBlue;
+}
+.deepBlueHover {
+    background-color: $deepBlueHover;
+}
+.lightgrey {
+    background-color: $lightgrey;
+}
+.darkGrey {
+    background-color: $darkGrey;
+}
+.errorRed {
+    background-color: $errorRed;
+}
+.warningYellow {
+    background-color: $warningYellow;
+}
+
+.text {
+    &-deepBlue {
+        color: $deepBlue;
+    }
+
+    &-lightgrey {
+        color: $lightgrey;
+    }
+
+    &-errorRed {
+        color: $errorRed;
+    }
+
+    &-warningYellow {
+        color: $warningYellow;
+    }
 }
 
 //hide on mobile
