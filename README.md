@@ -79,20 +79,20 @@ This component is similar to the Tabbar component. With the Tabslider component 
 
 ### Sidemenu (JS component)
 ```html
-<div class="pd-sidemenu">
- <div class="pd-menu-header">
+<div class="pd sidemenu">
+ <div class="header">
   <h2>Header 1</h2>
  </div>
- <div class="pd-menu-item">
+ <div class="item">
   <p>Item 1</p>
  </div>
- <div class="pd-menu-item">
+ <div class="item">
   <p>Item 2</p>
  </div>
- <div class="pd-menu-item">
+ <div class="item">
   <p>Item 3</p>
  </div>
- <div class="pd-menu-item">
+ <div class="item">
   <p>Item 4</p>
  </div>
 </div>
