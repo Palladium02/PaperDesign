@@ -9,13 +9,9 @@ All JavaScript-Components will initialize themselves automatically.
 If you have git you can clone this repo.
 Or if you want to load it from our server do the following.
 ```html
-<html>
- <head>
-  <link rel="stylesheet" href="https://paper.pallindium.de/css">
-  <!--for the javascript-->
-  <script defer src="https://paper.pallindium.de/js">
- </head>
-</html>
+<link rel="stylesheet" href="https://paper.pallindium.de/css">
+<!--for the javascript-->
+<script defer src="https://paper.pallindium.de/js">
 ```
 
 ## Components
