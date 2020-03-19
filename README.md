@@ -12,7 +12,7 @@ Or if you want to load it from our server do the following.
 <html>
  <head>
   <link rel="stylesheet" href="https://paper.pallindium.de/css">
-  <!-for the javascript->
+  <!--for the javascript-->
   <script defer src="https://paper.pallindium.de/js">
  <head/>
 <html/>
