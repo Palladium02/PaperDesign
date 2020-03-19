@@ -14,8 +14,8 @@ Or if you want to load it from our server do the following.
   <link rel="stylesheet" href="https://paper.pallindium.de/css">
   <!--for the javascript-->
   <script defer src="https://paper.pallindium.de/js">
- <head/>
-<html/>
+ </head>
+</html>
 ```
 
 ## Components
