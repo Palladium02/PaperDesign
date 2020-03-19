@@ -5,6 +5,19 @@ This CSS framework contains some JS components which will look good but not work
 if you do not embed the "pd.js"-file.
 All JavaScript-Components will initialize themselves automatically.
 
+## How to use
+If you have git you can clone this repo.
+Or if you want to load it from our server do the following.
+```html
+<html>
+ <head>
+  <link rel="stylesheet" href="https://paper.pallindium.de/css">
+  <!-for the javascript->
+  <script defer src="https://paper.pallindium.de/js">
+ <head/>
+<html/>
+```
+
 ## Components
 
 ### Table
